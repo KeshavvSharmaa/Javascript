@@ -31,3 +31,31 @@ let myObj = { //objects are declared within curly braces
 const myFunction = function(){
     console.log("Hello World");
 }
+
+// ************************* Stack and Heap Memory *******************************
+
+// Stack => Primitive (Call by value: a copy of data)
+// Heap => Non-Primitive (Call by reference: direct reference to original value)
+
+let myPetName = "Tommy"
+
+let anotherName = myPetName
+anotherName = "Sheru"
+
+console.log(anotherName);
+console.log(myPetName);
+
+let userOne = {
+    email:"user@google.com",
+    upi : "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "keshav@google.com"
+
+console.log(userTwo.email);
+console.log(userOne.email);
+
+
+
